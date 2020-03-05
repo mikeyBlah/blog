@@ -1,0 +1,24 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 12px 10%;
+  border-bottom: 1px solid #CCC;
+  h1 {
+    font-size: 32px;
+  }
+  .list__container {
+    display: flex;
+    li {
+      font-size: 18px;
+      font-weight: 500;
+      padding: 12px 20px;
+      list-style: none;
+      text-decoration: none;
+    }
+    .listItemActive {
+      color: #000;
+    }
+  }
+}
