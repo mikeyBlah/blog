@@ -7,9 +7,7 @@ const Layout = ( props ) => {
   return (
     <div className={layoutStyles.layout__container}>
       <Header />
-      <div className={layoutStyles.focal__container}>
         {props.children}
-      </div>
       <Footer />
     </div>
   )

@@ -1,24 +1,31 @@
+@import 'variables.scss';
+
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 12px 10%;
-  border-bottom: 1px solid #CCC;
+  font-family: 'Bellota', cursive;
   h1 {
     font-size: 32px;
+    color: $secondary-color;
   }
   .list__container {
     display: flex;
     li {
       font-size: 18px;
-      font-weight: 500;
+      font-weight: 600;
       padding: 12px 20px;
       list-style: none;
       text-decoration: none;
+      color: $base-color;
+      a {
+        color: $secondary-color;
+      }
     }
     .listItemActive {
-      color: #000;
+      color: $secondary-color;
     }
   }
 }

@@ -1,11 +1,9 @@
+@import 'variables.scss';
+
 .layout__container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 100%;
   min-height: 100vh;
-  .focal__container {
-    width: 80%;
-    margin: 0 auto;
-  }
+  background: $neutral-color;
 }

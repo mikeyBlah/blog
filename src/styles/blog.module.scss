@@ -1,6 +1,22 @@
-.blogListItem {
-  margin: 20px 0;
-  padding: 12px;
-  border: 1px solid #333;
-  border-radius: 12px;
+@import 'variables.scss';
+
+.heroImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 200px 10%;
+  background: $mid-light-color;
+  color: #FAFAFA;
+}
+.blogListContainer {
+  display: flex;
+  justify-content: space-between;
+  .blogListItem {
+    margin: 20px 0;
+    padding: 12px;
+    border: 1px solid #333;
+    width: 300px;
+    height: 300px;
+  }
 }

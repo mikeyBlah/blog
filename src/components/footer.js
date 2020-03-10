@@ -4,6 +4,7 @@ import footerStyles from '../styles/footer.module.scss';
 
 const Footer = () => {
 
+  const year = new Date().getFullYear();
   const data = useStaticQuery(graphql`
     query{
       site {
@@ -23,7 +24,7 @@ const Footer = () => {
         <li><Link to='/contact'>Contact</Link></li>
       </ul>
       <p className={footerStyles.smallPrint}>
-        Created by {data.site.siteMetadata.author}, &copy; 2020
+        Created by {data.site.siteMetadata.author}, &copy; {year}
       </p>
     </div>
   )
