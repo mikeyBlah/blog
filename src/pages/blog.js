@@ -4,6 +4,7 @@ import { Link, graphql, useStaticQuery } from 'gatsby';
 import blogStyles from '../styles/blog.module.scss';
 import Head from '../components/head';
 import FocalContain from '../components/focalContain';
+import BlogFilterBar from '../components/blogFilterBar';
 
 const BlogPage = () => {
 
@@ -26,6 +27,17 @@ const BlogPage = () => {
     }
   `)
 
+  const blogs = [...data.allContentfulBlogPost.edges];
+  console.log('Blogs', blogs);
+
+  const filterFields = (e) => {
+    console.log('useEffect in here to filter posts', e.target.innerHTML, blogs.length);
+    for(let i=0; i < blogs.length; i++) {
+      if(i === 1){
+        console.log('Blog number 2', blogs[i]);
+      }
+    }
+  }
   return (
     <Layout>
       <Head title="Blog" />
@@ -33,6 +45,9 @@ const BlogPage = () => {
         <h1>Featured Article</h1>
         <p>This is where my featured article will be displayed</p>
       </section>
+      <BlogFilterBar 
+        click={filterFields}
+      />
       <FocalContain>
         <ul className={blogStyles.blogListContainer}>
           {data.allContentfulBlogPost.edges.map((edge) => {

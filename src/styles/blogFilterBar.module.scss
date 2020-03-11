@@ -1,0 +1,14 @@
+@import './variables';
+
+.blogBarContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #CCC;
+  text-align: center;
+  li {
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+}
