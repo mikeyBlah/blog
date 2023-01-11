@@ -23,7 +23,7 @@
     "gatsby-remark-relative-images": "^0.3.0",
     "gatsby-source-contentful": "^2.1.89",
     "gatsby-source-filesystem": "^2.1.48",
-    "gatsby-transformer-remark": "^2.6.53",
+    "gatsby-transformer-remark": "^5.25.1",
     "install": "^0.13.0",
     "node-sass": "^4.13.1",
     "npm": "^6.14.2",
